@@ -3,78 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Modern Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header / Navigation -->
     <header>
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <p>Landing Page</p>
-    </div>
+        <div class="container navbar">
+            <div class="logo">
+                <h1>LandingPage</h1>
+            </div>
             <nav>
-                <div class="btn">
-                    <i class="fa fa-times close-btn"></i>
-                </div>
-                <li><a href="#">Home</li>
-                <li><a href="#">About</li>
-                <li><a href="#">Contact</a></li>            
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
-            <div class="btn">
-                <i class="fa fa-bars menu-btn"></i>
-            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-       </header> 
+    </header>
+
+    <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-content">
+            <h2>Build Your Digital Presence</h2>
+            <p>We create modern, responsive, and engaging websites that help your business grow and connect with your audience.</p>
+            <a href="#services" class="btn">Get Started</a>
+        </div>
+       
+    </section>
 
-        <div class="content">
-           
-    <div class="info">
-                
-                        <h2>Development</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <a href="#" class="info-btn">More Info</a>
-                      </div>
-                    </div>
-               
-    
-           
-   </section>
- <section class="work">
-    <div class="grid_item">
-        <div class="card">
-            <div class="image_container">
-                <img src="./img/web.png" alt="web developement"/>
-            </div>
-            <div class="card_content">
+    <!-- Services / Features -->
+    <section class="services" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
                 <h3>Web Development</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-                    quibusdam ex quaerat quasi nostrum tempore. 
-                </p>
+                <p>Create responsive websites with modern designs and seamless performance.</p>
             </div>
-        </div>
-
-    </div>
-    <div class="grid_item">
-        <div class="card">
-            <div class="image_container">
-                <img src="./img/mobile.png" alt="app developement"/>
-            </div>
-            <div class="card_content">
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
                 <h3>App Development</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-                    quibusdam ex quaerat quasi nostrum tempore. 
-                </p>
+                <p>Build intuitive mobile applications for iOS and Android platforms.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Digital Marketing</h3>
+                <p>Grow your brand online with SEO, social media, and content strategies.</p>
             </div>
         </div>
+    </section>
 
-    </div>
-     </section>
- <footer><h3 class="credit">Designed with <i class="fab fa-heart pulse"></i> by Malay Joshi</a></h3>
- </footer>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"Amazing service! My website looks incredible and works perfectly."</p>
+                <h4>- Jane Doe</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Highly professional team. Our app launch was smooth and successful."</p>
+                <h4>- John Smith</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Great communication and creative ideas. I highly recommend them!"</p>
+                <h4>- Sarah Lee</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="credit">Designed with <i class="fas fa-heart"></i> by Malay Joshi</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
